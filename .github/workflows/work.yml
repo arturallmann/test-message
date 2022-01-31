@@ -17,7 +17,7 @@ on:
         required: true
       home:
         # Friendly description to be shown in the UI instead of 'home'
-        description: 'Person's address'
+        description: 'Persons address'
         # Default value if no value is explicitly provided
         default: 'TPT'
         # Input has to be provided for the workflow to run
