@@ -36,13 +36,11 @@ jobs:
     - name: Send greeting
       run: echo "Hello ${{ github.event.inputs.name }}"
     - name: Send SWAT team
-      run: echo "Hello ${{ github.event.inputs.home }}"
+      run: echo "your geopolitical location is ${{ github.event.inputs.home }}"
       
   build_and_test:
     runs-on: ubuntu-latest
     steps:
-     - name: Checkout repository
-        uses: actions/checkout@v2
       - name: Archive production artifacts
         uses: actions/upload-artifact@v2
         with:
